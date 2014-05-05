@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface DetailRouteViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UIWebView *viewRoutePdfWeb;
 
 
 @property (weak, nonatomic) IBOutlet UILabel *label;

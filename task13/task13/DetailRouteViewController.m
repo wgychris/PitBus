@@ -30,6 +30,7 @@
     [super viewDidLoad];
 	
     self.label.text = [NSString stringWithFormat:@"%@", self.sendLabel];
+    [self loadRemotePdf];
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,6 +39,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) loadRemotePdf
+{
+    NSString *fullURL = @"http://74.116.73.3/bustime/map/displaymap.jsp";//http://www.portauthority.org/rt/1.pdf";
+    NSURL *url = [NSURL URLWithString:fullURL];
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    [_viewRoutePdfWeb loadRequest:requestObj];
+    
+}
 
 /*
 #pragma mark - Navigation

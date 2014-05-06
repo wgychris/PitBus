@@ -31,7 +31,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
      self.dataArray = [NSArray arrayWithObjects:@"Route 71C                        2min",
-                       @"Route 76B                        4min", @"Route 38X                        9min", nil];
+                       @"Route 76B                        4min", @"Route 38X                        9min",
+                       @"Route 39C                        6min",nil];
 }
 
 - (void)didReceiveMemoryWarning

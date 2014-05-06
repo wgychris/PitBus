@@ -95,11 +95,11 @@
         
         if ([self.searchDisplayController isActive]) {
             indexPath = [self.searchDisplayController.searchResultsTableView indexPathForSelectedRow];
-            dvc.sendLabel = [self.searchResults objectAtIndex:indexPath.row];
+          //  dvc.sendLabel = [self.searchResults objectAtIndex:indexPath.row];
             return;
         } else{
             indexPath = [self.tableView indexPathForSelectedRow];
-            dvc.sendLabel = [self.dataArray objectAtIndex:indexPath.row];
+          //  dvc.sendLabel = [self.dataArray objectAtIndex:indexPath.row];
             return;
         }
     }

@@ -12,7 +12,7 @@
 @property (strong, nonatomic) IBOutlet UIWebView *viewRoutePdfWeb;
 
 
-@property (weak, nonatomic) IBOutlet UILabel *label;
-@property (strong, nonatomic) NSString *sendLabel;
+//@property (weak, nonatomic) IBOutlet UILabel *label;
+//@property (strong, nonatomic) NSString *sendLabel;
 
 @end

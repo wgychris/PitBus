@@ -16,7 +16,7 @@
 
 @implementation DetailRouteViewController
 
-@synthesize label;
+//@synthesize label;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,8 +31,22 @@
 {
     [super viewDidLoad];
 	
-    self.label.text = [NSString stringWithFormat:@"%@", self.sendLabel];
+    //self.label.text = [NSString stringWithFormat:@"%@", self.sendLabel];
     [self loadRemotePdf];
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+    
+    // Change the height dynamically of the UIWebView to match the html content
+    CGRect webViewFrame = _viewRoutePdfWeb.frame;
+    webViewFrame.size.height = webViewFrame.size.height + 30;
+    webView.frame = webViewFrame;
+    CGSize fittingSize = [webView sizeThatFits:CGSizeZero];
+    webViewFrame.size = fittingSize;
+    // webViewFrame.size.width = 276; Making sure that the webView doesn't get wider than 276 px
+    _viewRoutePdfWeb.frame = webViewFrame;
+    
+    float webViewHeight = webView.frame.size.height;
 }
 
 - (void)didReceiveMemoryWarning

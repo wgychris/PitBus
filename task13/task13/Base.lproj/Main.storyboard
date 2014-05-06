@@ -173,7 +173,11 @@
                                 <rect key="frame" x="0.0" y="516" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Route Pdf" id="CKn-s0-hcp"/>
+                                    <barButtonItem title="Route Pdf" id="CKn-s0-hcp">
+                                        <connections>
+                                            <segue destination="F1K-Sl-LiZ" kind="push" id="V6k-hG-maq"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -263,10 +267,10 @@
             </objects>
             <point key="canvasLocation" x="1613" y="-801"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail Route Pdf View Controller-->
         <scene sceneID="nV2-Wb-uQr">
             <objects>
-                <viewController id="F1K-Sl-LiZ" sceneMemberID="viewController">
+                <viewController id="F1K-Sl-LiZ" customClass="DetailRoutePdfViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="c7l-lG-1mc"/>
                         <viewControllerLayoutGuide type="bottom" id="hMb-3N-ObF"/>
@@ -294,12 +298,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <outlet property="delegate" destination="F1K-Sl-LiZ" id="OSi-fr-ivF"/>
+                                    <outlet property="delegate" destination="F1K-Sl-LiZ" id="1CV-Au-N4a"/>
                                 </connections>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="auH-v5-G2M"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aOr-wK-Ygz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

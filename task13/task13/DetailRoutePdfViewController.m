@@ -6,15 +6,13 @@
 //  Copyright (c) 2014年 Guanying Wang. All rights reserved.
 //
 
-#import "DetailRouteViewController.h"
-
 #import "DetailRoutePdfViewController.h"
 
-@interface DetailRouteViewController ()
+@interface DetailRoutePdfViewController ()
 
 @end
 
-@implementation DetailRouteViewController
+@implementation DetailRoutePdfViewController
 
 @synthesize label;
 
@@ -31,7 +29,7 @@
 {
     [super viewDidLoad];
 	
-    self.label.text = [NSString stringWithFormat:@"%@", self.sendLabel];
+    //self.label.text = [NSString stringWithFormat:@"%@", self.sendLabel];
     [self loadRemotePdf];
 }
 
@@ -43,7 +41,7 @@
 
 - (void) loadRemotePdf
 {
-    NSString *fullURL = @"http://74.116.73.3/bustime/map/displaymap.jsp";//http://www.portauthority.org/rt/1.pdf";
+    NSString *fullURL = @"http://www.portauthority.org/rt/1.pdf";
     NSURL *url = [NSURL URLWithString:fullURL];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     [_viewRoutePdfWeb loadRequest:requestObj];
@@ -51,14 +49,14 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+ {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

@@ -26,6 +26,7 @@
 		C1813772191875DB004FA56D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1813771191875DB004FA56D /* CoreLocation.framework */; };
 		C1813774191875E4004FA56D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1813773191875E4004FA56D /* MapKit.framework */; };
 		C181377719189B99004FA56D /* MapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = C181377619189B99004FA56D /* MapPoint.m */; };
+		C181377D1918AC50004FA56D /* DetailRoutePdfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C181377C1918AC50004FA56D /* DetailRoutePdfViewController.m */; };
 		C195D9FA1917244200713743 /* ListRoutesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C195D9F91917244200713743 /* ListRoutesTableViewController.m */; };
 		C195D9FD1917298600713743 /* DetailRouteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C195D9FC1917298500713743 /* DetailRouteViewController.m */; };
 /* End PBXBuildFile section */
@@ -68,6 +69,8 @@
 		C1813773191875E4004FA56D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C181377519189B99004FA56D /* MapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPoint.h; sourceTree = "<group>"; };
 		C181377619189B99004FA56D /* MapPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPoint.m; sourceTree = "<group>"; };
+		C181377B1918AC50004FA56D /* DetailRoutePdfViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailRoutePdfViewController.h; sourceTree = "<group>"; };
+		C181377C1918AC50004FA56D /* DetailRoutePdfViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailRoutePdfViewController.m; sourceTree = "<group>"; };
 		C195D9F81917244200713743 /* ListRoutesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListRoutesTableViewController.h; sourceTree = "<group>"; };
 		C195D9F91917244200713743 /* ListRoutesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListRoutesTableViewController.m; sourceTree = "<group>"; };
 		C195D9FB1917298500713743 /* DetailRouteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailRouteViewController.h; sourceTree = "<group>"; };
@@ -152,6 +155,8 @@
 				C1166E7F1918635700503955 /* LocationMapViewController.m */,
 				C181377519189B99004FA56D /* MapPoint.h */,
 				C181377619189B99004FA56D /* MapPoint.m */,
+				C181377B1918AC50004FA56D /* DetailRoutePdfViewController.h */,
+				C181377C1918AC50004FA56D /* DetailRoutePdfViewController.m */,
 			);
 			path = task13;
 			sourceTree = "<group>";
@@ -289,6 +294,7 @@
 				C195D9FA1917244200713743 /* ListRoutesTableViewController.m in Sources */,
 				1EC44F711915D41600457A6D /* main.m in Sources */,
 				C1166E801918635700503955 /* LocationMapViewController.m in Sources */,
+				C181377D1918AC50004FA56D /* DetailRoutePdfViewController.m in Sources */,
 				C181377719189B99004FA56D /* MapPoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

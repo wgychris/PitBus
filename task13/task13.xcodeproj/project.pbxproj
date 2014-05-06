@@ -14,17 +14,18 @@
 		1EC44F711915D41600457A6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EC44F701915D41600457A6D /* main.m */; };
 		1EC44F751915D41600457A6D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EC44F741915D41600457A6D /* AppDelegate.m */; };
 		1EC44F781915D41600457A6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EC44F761915D41600457A6D /* Main.storyboard */; };
-		1EC44F7B1915D41600457A6D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EC44F7A1915D41600457A6D /* ViewController.m */; };
 		1EC44F7D1915D41600457A6D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EC44F7C1915D41600457A6D /* Images.xcassets */; };
 		1EC44F841915D41600457A6D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC44F831915D41600457A6D /* XCTest.framework */; };
 		1EC44F851915D41600457A6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC44F641915D41600457A6D /* Foundation.framework */; };
 		1EC44F861915D41600457A6D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC44F681915D41600457A6D /* UIKit.framework */; };
 		1EC44F8E1915D41600457A6D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1EC44F8C1915D41600457A6D /* InfoPlist.strings */; };
 		1EC44F901915D41600457A6D /* task13Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EC44F8F1915D41600457A6D /* task13Tests.m */; };
-		1EC44F9B1915DB5400457A6D /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EC44F9A1915DB5400457A6D /* ViewController2.m */; };
 		1EC44F9E1915DD5D00457A6D /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EC44F9D1915DD5D00457A6D /* TableViewController.m */; };
 		C1166E7D19185E9100503955 /* LocationTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1166E7C19185E9100503955 /* LocationTabViewController.m */; };
 		C1166E801918635700503955 /* LocationMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1166E7F1918635700503955 /* LocationMapViewController.m */; };
+		C1813772191875DB004FA56D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1813771191875DB004FA56D /* CoreLocation.framework */; };
+		C1813774191875E4004FA56D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1813773191875E4004FA56D /* MapKit.framework */; };
+		C181377719189B99004FA56D /* MapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = C181377619189B99004FA56D /* MapPoint.m */; };
 		C195D9FA1917244200713743 /* ListRoutesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C195D9F91917244200713743 /* ListRoutesTableViewController.m */; };
 		C195D9FD1917298600713743 /* DetailRouteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C195D9FC1917298500713743 /* DetailRouteViewController.m */; };
 /* End PBXBuildFile section */
@@ -51,22 +52,22 @@
 		1EC44F731915D41600457A6D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1EC44F741915D41600457A6D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1EC44F771915D41600457A6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1EC44F791915D41600457A6D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1EC44F7A1915D41600457A6D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1EC44F7C1915D41600457A6D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1EC44F821915D41600457A6D /* task13Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = task13Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EC44F831915D41600457A6D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1EC44F8B1915D41600457A6D /* task13Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "task13Tests-Info.plist"; sourceTree = "<group>"; };
 		1EC44F8D1915D41600457A6D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1EC44F8F1915D41600457A6D /* task13Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = task13Tests.m; sourceTree = "<group>"; };
-		1EC44F991915DB5400457A6D /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
-		1EC44F9A1915DB5400457A6D /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 		1EC44F9C1915DD5D00457A6D /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		1EC44F9D1915DD5D00457A6D /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		C1166E7B19185E9100503955 /* LocationTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationTabViewController.h; sourceTree = "<group>"; };
 		C1166E7C19185E9100503955 /* LocationTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationTabViewController.m; sourceTree = "<group>"; };
 		C1166E7E1918635700503955 /* LocationMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationMapViewController.h; sourceTree = "<group>"; };
 		C1166E7F1918635700503955 /* LocationMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationMapViewController.m; sourceTree = "<group>"; };
+		C1813771191875DB004FA56D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C1813773191875E4004FA56D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C181377519189B99004FA56D /* MapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPoint.h; sourceTree = "<group>"; };
+		C181377619189B99004FA56D /* MapPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPoint.m; sourceTree = "<group>"; };
 		C195D9F81917244200713743 /* ListRoutesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListRoutesTableViewController.h; sourceTree = "<group>"; };
 		C195D9F91917244200713743 /* ListRoutesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListRoutesTableViewController.m; sourceTree = "<group>"; };
 		C195D9FB1917298500713743 /* DetailRouteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailRouteViewController.h; sourceTree = "<group>"; };
@@ -78,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1813774191875E4004FA56D /* MapKit.framework in Frameworks */,
+				C1813772191875DB004FA56D /* CoreLocation.framework in Frameworks */,
 				1EC44F671915D41600457A6D /* CoreGraphics.framework in Frameworks */,
 				1EC44F691915D41600457A6D /* UIKit.framework in Frameworks */,
 				1EC44F651915D41600457A6D /* Foundation.framework in Frameworks */,
@@ -119,6 +122,8 @@
 		1EC44F631915D41600457A6D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C1813773191875E4004FA56D /* MapKit.framework */,
+				C1813771191875DB004FA56D /* CoreLocation.framework */,
 				1EC44F641915D41600457A6D /* Foundation.framework */,
 				1EC44F661915D41600457A6D /* CoreGraphics.framework */,
 				1EC44F681915D41600457A6D /* UIKit.framework */,
@@ -137,10 +142,6 @@
 				C1166E7C19185E9100503955 /* LocationTabViewController.m */,
 				1EC44F9C1915DD5D00457A6D /* TableViewController.h */,
 				1EC44F9D1915DD5D00457A6D /* TableViewController.m */,
-				1EC44F991915DB5400457A6D /* ViewController2.h */,
-				1EC44F9A1915DB5400457A6D /* ViewController2.m */,
-				1EC44F791915D41600457A6D /* ViewController.h */,
-				1EC44F7A1915D41600457A6D /* ViewController.m */,
 				1EC44F7C1915D41600457A6D /* Images.xcassets */,
 				1EC44F6B1915D41600457A6D /* Supporting Files */,
 				C195D9F81917244200713743 /* ListRoutesTableViewController.h */,
@@ -149,6 +150,8 @@
 				C195D9FC1917298500713743 /* DetailRouteViewController.m */,
 				C1166E7E1918635700503955 /* LocationMapViewController.h */,
 				C1166E7F1918635700503955 /* LocationMapViewController.m */,
+				C181377519189B99004FA56D /* MapPoint.h */,
+				C181377619189B99004FA56D /* MapPoint.m */,
 			);
 			path = task13;
 			sourceTree = "<group>";
@@ -279,15 +282,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EC44F7B1915D41600457A6D /* ViewController.m in Sources */,
 				C195D9FD1917298600713743 /* DetailRouteViewController.m in Sources */,
-				1EC44F9B1915DB5400457A6D /* ViewController2.m in Sources */,
 				1EC44F751915D41600457A6D /* AppDelegate.m in Sources */,
 				1EC44F9E1915DD5D00457A6D /* TableViewController.m in Sources */,
 				C1166E7D19185E9100503955 /* LocationTabViewController.m in Sources */,
 				C195D9FA1917244200713743 /* ListRoutesTableViewController.m in Sources */,
 				1EC44F711915D41600457A6D /* main.m in Sources */,
 				C1166E801918635700503955 /* LocationMapViewController.m in Sources */,
+				C181377719189B99004FA56D /* MapPoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,10 +9,11 @@
 #import "LocationTabViewController.h"
 
 @interface LocationTabViewController ()
-
+@property (strong, nonatomic) NSArray *dataArray;
 @end
 
 @implementation LocationTabViewController
+
 
 @synthesize tableView;
 
@@ -29,6 +30,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+     self.dataArray = [NSArray arrayWithObjects:@"Route 71C                        2min",
+                       @"Route 76B                        4min", @"Route 38X                        9min", nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,10 +48,41 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 
-    // Return the number of rows in the section.
-    return 5;
+        return [self.dataArray count];
 }
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *simpleTableIdentifier = @"Cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+    }
+    
+    cell.textLabel.text = [self.dataArray objectAtIndex:indexPath.row];
+    return cell;
+}
+
+/*
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+
+   
+    
+    if(cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
+    }
+    
+    cell.textLabel.text = [self.dataArray objectAtIndex:indexPath.row];
+    
+    return cell;
+}
+ */
+
+/*
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -63,6 +97,7 @@
     
     return cell;
 }
+ */
 /*
 #pragma mark - Navigation
 

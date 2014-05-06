@@ -290,7 +290,11 @@
                                 <rect key="frame" x="0.0" y="506" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Route Map" id="Nzk-dK-ws9"/>
+                                    <barButtonItem title="Route Map" id="Nzk-dK-ws9">
+                                        <connections>
+                                            <segue destination="f8p-P7-aJo" kind="push" id="Tgi-7m-eQh"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0fv-Vl-gpt">
@@ -305,6 +309,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="auH-v5-G2M"/>
+                    <connections>
+                        <outlet property="viewRoutePdfWeb" destination="0fv-Vl-gpt" id="r9E-0z-coV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aOr-wK-Ygz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -335,7 +342,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="Tgi-7m-eQh"/>
         <segue reference="7Ml-UQ-fDI"/>
-        <segue reference="chO-Qv-rmp"/>
     </inferredMetricsTieBreakers>
 </document>

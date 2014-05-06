@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 
 @interface DetailRoutePdfViewController : UIViewController
+//@property (strong, nonatomic) IBOutlet UIWebView *viewRoutePdfWeb;
 @property (strong, nonatomic) IBOutlet UIWebView *viewRoutePdfWeb;
 
 

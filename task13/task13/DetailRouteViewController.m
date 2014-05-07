@@ -46,7 +46,7 @@
     // webViewFrame.size.width = 276; Making sure that the webView doesn't get wider than 276 px
     _viewRoutePdfWeb.frame = webViewFrame;
     
-    float webViewHeight = webView.frame.size.height;
+    //float webViewHeight = webView.frame.size.height;
 }
 
 - (void)didReceiveMemoryWarning

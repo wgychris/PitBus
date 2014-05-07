@@ -35,6 +35,12 @@
 		1EB012E61918796000AE6B1F /* DismissSeque.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB012E51918796000AE6B1F /* DismissSeque.m */; };
 		1EB012E9191882C300AE6B1F /* SelectItineraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB012E8191882C300AE6B1F /* SelectItineraryViewController.m */; };
 		1EB012EC1918845900AE6B1F /* SelectItineraryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB012EB1918845900AE6B1F /* SelectItineraryTableViewCell.m */; };
+		C1310770191AFBFC00692555 /* DetailRoutePdfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1310765191AFBFC00692555 /* DetailRoutePdfViewController.m */; };
+		C1310771191AFBFC00692555 /* DetailRouteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1310767191AFBFC00692555 /* DetailRouteViewController.m */; };
+		C1310772191AFBFC00692555 /* ListRoutesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1310769191AFBFC00692555 /* ListRoutesTableViewController.m */; };
+		C1310773191AFBFC00692555 /* LocationMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C131076B191AFBFC00692555 /* LocationMapViewController.m */; };
+		C1310774191AFBFC00692555 /* LocationTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C131076D191AFBFC00692555 /* LocationTabViewController.m */; };
+		C1310775191AFBFC00692555 /* MapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = C131076F191AFBFC00692555 /* MapPoint.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +93,18 @@
 		1EB012E8191882C300AE6B1F /* SelectItineraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectItineraryViewController.m; sourceTree = "<group>"; };
 		1EB012EA1918845900AE6B1F /* SelectItineraryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectItineraryTableViewCell.h; sourceTree = "<group>"; };
 		1EB012EB1918845900AE6B1F /* SelectItineraryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectItineraryTableViewCell.m; sourceTree = "<group>"; };
+		C1310764191AFBFC00692555 /* DetailRoutePdfViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailRoutePdfViewController.h; sourceTree = "<group>"; };
+		C1310765191AFBFC00692555 /* DetailRoutePdfViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailRoutePdfViewController.m; sourceTree = "<group>"; };
+		C1310766191AFBFC00692555 /* DetailRouteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailRouteViewController.h; sourceTree = "<group>"; };
+		C1310767191AFBFC00692555 /* DetailRouteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailRouteViewController.m; sourceTree = "<group>"; };
+		C1310768191AFBFC00692555 /* ListRoutesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListRoutesTableViewController.h; sourceTree = "<group>"; };
+		C1310769191AFBFC00692555 /* ListRoutesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListRoutesTableViewController.m; sourceTree = "<group>"; };
+		C131076A191AFBFC00692555 /* LocationMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationMapViewController.h; sourceTree = "<group>"; };
+		C131076B191AFBFC00692555 /* LocationMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationMapViewController.m; sourceTree = "<group>"; };
+		C131076C191AFBFC00692555 /* LocationTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationTabViewController.h; sourceTree = "<group>"; };
+		C131076D191AFBFC00692555 /* LocationTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationTabViewController.m; sourceTree = "<group>"; };
+		C131076E191AFBFC00692555 /* MapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPoint.h; sourceTree = "<group>"; };
+		C131076F191AFBFC00692555 /* MapPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPoint.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +166,7 @@
 		1E26A129191722BB00C4915A /* TEAM1 */ = {
 			isa = PBXGroup;
 			children = (
+				C1310763191AFBFC00692555 /* 2ndPart */,
 				1E26A15B191724F000C4915A /* Image */,
 				1E26A132191722BB00C4915A /* AppDelegate.h */,
 				1E26A133191722BB00C4915A /* AppDelegate.m */,
@@ -213,6 +232,25 @@
 				1E26A1641917296000C4915A /* compas-32.png */,
 			);
 			name = Image;
+			sourceTree = "<group>";
+		};
+		C1310763191AFBFC00692555 /* 2ndPart */ = {
+			isa = PBXGroup;
+			children = (
+				C1310764191AFBFC00692555 /* DetailRoutePdfViewController.h */,
+				C1310765191AFBFC00692555 /* DetailRoutePdfViewController.m */,
+				C1310766191AFBFC00692555 /* DetailRouteViewController.h */,
+				C1310767191AFBFC00692555 /* DetailRouteViewController.m */,
+				C1310768191AFBFC00692555 /* ListRoutesTableViewController.h */,
+				C1310769191AFBFC00692555 /* ListRoutesTableViewController.m */,
+				C131076A191AFBFC00692555 /* LocationMapViewController.h */,
+				C131076B191AFBFC00692555 /* LocationMapViewController.m */,
+				C131076C191AFBFC00692555 /* LocationTabViewController.h */,
+				C131076D191AFBFC00692555 /* LocationTabViewController.m */,
+				C131076E191AFBFC00692555 /* MapPoint.h */,
+				C131076F191AFBFC00692555 /* MapPoint.m */,
+			);
+			path = 2ndPart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,10 +362,16 @@
 				1E26A13D191722BB00C4915A /* SecondViewController.m in Sources */,
 				1E26A134191722BB00C4915A /* AppDelegate.m in Sources */,
 				1EB012E61918796000AE6B1F /* DismissSeque.m in Sources */,
+				C1310774191AFBFC00692555 /* LocationTabViewController.m in Sources */,
+				C1310771191AFBFC00692555 /* DetailRouteViewController.m in Sources */,
 				1E26A1701917411200C4915A /* NearByTableViewCell.m in Sources */,
+				C1310772191AFBFC00692555 /* ListRoutesTableViewController.m in Sources */,
 				1EB012E319186D4200AE6B1F /* SettingsViewController.m in Sources */,
+				C1310773191AFBFC00692555 /* LocationMapViewController.m in Sources */,
 				1E26A13A191722BB00C4915A /* FirstViewController.m in Sources */,
+				C1310770191AFBFC00692555 /* DetailRoutePdfViewController.m in Sources */,
 				1E26A130191722BB00C4915A /* main.m in Sources */,
+				C1310775191AFBFC00692555 /* MapPoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

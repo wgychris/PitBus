@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SettingsViewController : UIViewController
+@interface SettingsViewController : UIViewController <UITextFieldDelegate,UIPickerViewDataSource,UIPickerViewDelegate>
+{
+    UIPickerView *myPickerView;
+    NSArray *pickerArray;
+}
 - (IBAction)DoneButton:(id)sender;
 @property (strong, nonatomic) IBOutlet UITextField *today;
 @property (strong, nonatomic) IBOutlet UITextField *now;

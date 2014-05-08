@@ -42,6 +42,7 @@
     //Set some parameters for the location object.
     [locationManager setDistanceFilter:kCLDistanceFilterNone];
     [locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
+    //[self queryGooglePlaces];
 }
 
 - (void)didReceiveMemoryWarning

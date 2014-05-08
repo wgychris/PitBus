@@ -31,6 +31,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
     // Do any additional setup after loading the view.
 }
 
@@ -64,35 +65,9 @@
 
 - (IBAction)DoneButton:(id)sender {
 
-    
-    -(void)addPickerView{
-        pickerArray = [[NSArray alloc]initWithObjects:@"Chess",
-                       @"Cricket",@"Football",@"Tennis",@"Volleyball", nil];
-        today = [[UITextField alloc]initWithFrame:
-                       CGRectMake(10, 100, 300, 30)];
-        today.borderStyle = UITextBorderStyleRoundedRect;
-        today.textAlignment = UITextAlignmentCenter;
-        todaydelegate = self;
-        [self.view addSubview:today];
-        [today setPlaceholder:@"Pick a Sport"];
-        myPickerView = [[UIPickerView alloc]init];
-        myPickerView.dataSource = self;
-        myPickerView.delegate = self;
-        myPickerView.showsSelectionIndicator = YES;
-        UIBarButtonItem *doneButton = [[UIBarButtonItem alloc]
-                                       initWithTitle:@"Done" style:UIBarButtonItemStyleDone
-                                       target:self action:@selector(done:)];
-        UIToolbar *toolBar = [[UIToolbar alloc]initWithFrame:
-                              CGRectMake(0, self.view.frame.size.height-
-                                         myDatePicker.frame.size.height-50, 320, 50)];
-        [toolBar setBarStyle:UIBarStyleBlackOpaque];
-        NSArray *toolbarItems = [NSArray arrayWithObjects: 
-                                 doneButton, nil];
-        [toolBar setItems:toolbarItems];
-        today.inputView = myPickerView;
-        today.inputAccessoryView = toolBar;
-        
-    }
+
 }
+
+
 
 @end

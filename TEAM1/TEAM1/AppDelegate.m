@@ -32,6 +32,10 @@
     [[UITabBar appearance] setBackgroundImage:tabBarBackground];
     [[UITabBar appearance] setSelectedImageTintColor:[UIColor colorWithRed:0.40 green:0.77 blue:0.93 alpha:1.0]];
     
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Privay Agreement" message:@"This app would like to use your current location. Personal Data collected for the following purposes and using the following services:Displaying content from external platforms Google Maps widget. Personal Data: Cookie and Usage Data" delegate:self cancelButtonTitle:@"I don't agree" otherButtonTitles:nil];
+    // optional - add more buttons:
+    [alert addButtonWithTitle:@"I agree"];
+    [alert show];
     
     return YES;
 }
@@ -62,5 +66,7 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
 
 @end

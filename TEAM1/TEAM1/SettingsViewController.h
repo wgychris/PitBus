@@ -12,6 +12,7 @@
 {
     UIPickerView *myPickerView;
     NSArray *pickerArray;
+    UITextField *myTextField;
 }
 - (IBAction)DoneButton:(id)sender;
 @property (strong, nonatomic) IBOutlet UITextField *today;

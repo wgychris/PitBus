@@ -16,11 +16,13 @@
 @implementation SecondViewController
 @synthesize currentTextField;
 @synthesize DestinationTextField;
+@synthesize map;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     [[self view] setBackgroundColor :[UIColor colorWithRed:0.40 green:0.77 blue:0.93 alpha:1.0]];
+    self.map.delegate = self;
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -38,6 +40,12 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)TEXTFIELD {
     [TEXTFIELD resignFirstResponder];
     return YES;
+}
+
+- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
+{
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 800, 800);
+    [self.map setRegion:[self.map regionThatFits:region] animated:YES];
 }
 
 

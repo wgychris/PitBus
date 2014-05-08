@@ -41,6 +41,10 @@
 		C1310773191AFBFC00692555 /* LocationMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C131076B191AFBFC00692555 /* LocationMapViewController.m */; };
 		C1310774191AFBFC00692555 /* LocationTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C131076D191AFBFC00692555 /* LocationTabViewController.m */; };
 		C1310775191AFBFC00692555 /* MapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = C131076F191AFBFC00692555 /* MapPoint.m */; };
+		C1310778191B15C400692555 /* car.png in Resources */ = {isa = PBXBuildFile; fileRef = C1310776191B15C400692555 /* car.png */; };
+		C1310779191B15C400692555 /* running.png in Resources */ = {isa = PBXBuildFile; fileRef = C1310777191B15C400692555 /* running.png */; };
+		C1B09BDD191B1C0000860396 /* DetailStepTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B09BDC191B1C0000860396 /* DetailStepTableViewCell.m */; };
+		C1B09BE0191B1C6000860396 /* DetailStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B09BDF191B1C6000860396 /* DetailStepViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +109,12 @@
 		C131076D191AFBFC00692555 /* LocationTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationTabViewController.m; sourceTree = "<group>"; };
 		C131076E191AFBFC00692555 /* MapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPoint.h; sourceTree = "<group>"; };
 		C131076F191AFBFC00692555 /* MapPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPoint.m; sourceTree = "<group>"; };
+		C1310776191B15C400692555 /* car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car.png; path = ../../../../Downloads/car.png; sourceTree = "<group>"; };
+		C1310777191B15C400692555 /* running.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = running.png; path = ../../../../Downloads/running.png; sourceTree = "<group>"; };
+		C1B09BDB191B1C0000860396 /* DetailStepTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailStepTableViewCell.h; sourceTree = "<group>"; };
+		C1B09BDC191B1C0000860396 /* DetailStepTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailStepTableViewCell.m; sourceTree = "<group>"; };
+		C1B09BDE191B1C6000860396 /* DetailStepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailStepViewController.h; sourceTree = "<group>"; };
+		C1B09BDF191B1C6000860396 /* DetailStepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailStepViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +181,8 @@
 				1E26A132191722BB00C4915A /* AppDelegate.h */,
 				1E26A133191722BB00C4915A /* AppDelegate.m */,
 				1E26A135191722BB00C4915A /* Main.storyboard */,
+				C1B09BDE191B1C6000860396 /* DetailStepViewController.h */,
+				C1B09BDF191B1C6000860396 /* DetailStepViewController.m */,
 				1EB012E7191882C300AE6B1F /* SelectItineraryViewController.h */,
 				1EB012E8191882C300AE6B1F /* SelectItineraryViewController.m */,
 				1EB012E41918796000AE6B1F /* DismissSeque.h */,
@@ -184,6 +196,8 @@
 				1E26A16E1917411200C4915A /* NearByTableViewCell.h */,
 				1EB012EA1918845900AE6B1F /* SelectItineraryTableViewCell.h */,
 				1EB012EB1918845900AE6B1F /* SelectItineraryTableViewCell.m */,
+				C1B09BDB191B1C0000860396 /* DetailStepTableViewCell.h */,
+				C1B09BDC191B1C0000860396 /* DetailStepTableViewCell.m */,
 				1E26A16F1917411200C4915A /* NearByTableViewCell.m */,
 				1E26A13E191722BB00C4915A /* Images.xcassets */,
 				1E26A12A191722BB00C4915A /* Supporting Files */,
@@ -225,6 +239,8 @@
 			children = (
 				1E26A160191726B500C4915A /* bus.png */,
 				1E26A16819172A0F00C4915A /* wild_oliva.png */,
+				C1310776191B15C400692555 /* car.png */,
+				C1310777191B15C400692555 /* running.png */,
 				1E26A16919172A0F00C4915A /* wild_oliva_@2X.png */,
 				1E26A16A19172A0F00C4915A /* wild_oliva_@tabBar.png */,
 				1E26A1661917299D00C4915A /* edit-32.png */,
@@ -332,11 +348,13 @@
 				1E26A16C19172A0F00C4915A /* wild_oliva_@2X.png in Resources */,
 				1E26A1671917299D00C4915A /* edit-32.png in Resources */,
 				1E26A161191726B500C4915A /* bus.png in Resources */,
+				C1310779191B15C400692555 /* running.png in Resources */,
 				1E26A13F191722BB00C4915A /* Images.xcassets in Resources */,
 				1E26A16D19172A0F00C4915A /* wild_oliva_@tabBar.png in Resources */,
 				1E976044191826B00018A146 /* down2-32.png in Resources */,
 				1E26A12E191722BB00C4915A /* InfoPlist.strings in Resources */,
 				1E26A1651917296000C4915A /* compas-32.png in Resources */,
+				C1310778191B15C400692555 /* car.png in Resources */,
 				1E26A137191722BB00C4915A /* Main.storyboard in Resources */,
 				1E26A16B19172A0F00C4915A /* wild_oliva.png in Resources */,
 			);
@@ -360,9 +378,11 @@
 				1EB012EC1918845900AE6B1F /* SelectItineraryTableViewCell.m in Sources */,
 				1EB012E9191882C300AE6B1F /* SelectItineraryViewController.m in Sources */,
 				1E26A13D191722BB00C4915A /* SecondViewController.m in Sources */,
+				C1B09BE0191B1C6000860396 /* DetailStepViewController.m in Sources */,
 				1E26A134191722BB00C4915A /* AppDelegate.m in Sources */,
 				1EB012E61918796000AE6B1F /* DismissSeque.m in Sources */,
 				C1310774191AFBFC00692555 /* LocationTabViewController.m in Sources */,
+				C1B09BDD191B1C0000860396 /* DetailStepTableViewCell.m in Sources */,
 				C1310771191AFBFC00692555 /* DetailRouteViewController.m in Sources */,
 				1E26A1701917411200C4915A /* NearByTableViewCell.m in Sources */,
 				C1310772191AFBFC00692555 /* ListRoutesTableViewController.m in Sources */,

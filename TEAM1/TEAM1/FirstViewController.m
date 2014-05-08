@@ -69,5 +69,15 @@
     [self.searchBar resignFirstResponder];
 }
 
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    UITouch *touch = [[event allTouches] anyObject];
+    if ([self.searchBar isFirstResponder] && [touch view] != searchBar) {
+        [self.searchBar resignFirstResponder];
+        
+        [super touchesBegan:touches withEvent:event];
+        
+    }
+}
 
 @end

@@ -28,11 +28,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     //Make this controller the delegate for the map view.
-        self.mapView.delegate = self;
+    self.mapView.delegate = self;
     
     // Ensure that you can view your own location in the map view.
     [self.mapView setShowsUserLocation:YES];
     
+    //firstLaunch=YES;
     //Instantiate a location object.
     locationManager = [[CLLocationManager alloc] init];
     
@@ -42,7 +43,9 @@
     //Set some parameters for the location object.
     [locationManager setDistanceFilter:kCLDistanceFilterNone];
     [locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
-    //[self queryGooglePlaces];
+    [locationManager startUpdatingLocation]; // access location information about your user
+    [self queryGooglePlaces];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -77,8 +80,11 @@
 -(void) queryGooglePlaces{
     // Build the url string to send to Google. NOTE: The kGOOGLE_API_KEY is a constant that should contain your own API key that you obtain from Google. See this link for more info:
     // https://developers.google.com/maps/documentation/places/#Authentication
-  
+    
     NSString *url = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/search/json?location=%f,%f&radius=%@&types=%@&sensor=true&key=%@", currentCentre.latitude, currentCentre.longitude, [NSString stringWithFormat:@"%i", currenDist], @"bus_station", kGOOGLE_API_KEY];
+    
+    
+    // NSString *url = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=%f,%f&radius=%@&types=%@&sensor=true&key=%@", currentCentre.latitude, currentCentre.longitude, [NSString stringWithFormat:@"%i", currenDist], @"bar", kGOOGLE_API_KEY];
     
     //Formulate the string as a URL object.
     NSURL *googleRequestURL=[NSURL URLWithString:url];
@@ -86,6 +92,7 @@
     // Retrieve the results of the URL.
     dispatch_async(kBgQueue, ^{
         NSData* data = [NSData dataWithContentsOfURL: googleRequestURL];
+        NSLog(@"Google Data: %@", data);
         [self performSelectorOnMainThread:@selector(fetchedData:) withObject:data waitUntilDone:YES];
     });
 }
@@ -98,7 +105,7 @@
                           
                           options:kNilOptions
                           error:&error];
-    
+    NSLog(@"Google json: %@", json);
     //The results from Google will be an array obtained from the NSDictionary object with the key "results".
     NSArray* places = [json objectForKey:@"results"];
     
@@ -133,9 +140,31 @@
         placeCoord.latitude=[[loc objectForKey:@"lat"] doubleValue];
         placeCoord.longitude=[[loc objectForKey:@"lng"] doubleValue];
         // 5 - Create a new annotation.
-        MapPoint *placeObject = [[MapPoint alloc] initWithName:name address:vicinity coordinate:placeCoord];
+        MapPoint *placeObject = [[MapPoint alloc] initWithName:name coordinate:placeCoord];
         [_mapView addAnnotation:placeObject];
     }
+    // Hardcode plot nearby bus stops
+    for (int i=1; i<4; i++) {
+        //Retrieve the NSDictionary object in each index of the array.
+        //NSDictionary* place = [data objectAtIndex:i];
+        // 3 - There is a specific NSDictionary object that gives us the location info.
+        //NSDictionary *geo = [place objectForKey:@"geometry"];
+        // Get the lat and long for the location.
+        // NSDictionary *loc = [geo objectForKey:@"location"];
+        // 4 - Get your name and address info for adding to a pin.
+        NSString *name=@"name";//[place objectForKey:@"name"];
+        //NSString *vicinity=@"vicinity";//[place objectForKey:@"vicinity"];
+        // Create a special variable to hold this coordinate info.
+        CLLocationCoordinate2D placeCoord;
+        // Set the lat and long.
+        placeCoord.latitude= locationManager.location.coordinate.latitude + i*0.001;// * 0.00001;
+        placeCoord.longitude=locationManager.location.coordinate.longitude + i *0.001;//* 0.00002;
+        // 5 - Create a new annotation.
+        //MapPoint *placeObject = [[MapPoint alloc] initWithName:name address:vicinity coordinate:placeCoord];
+        MapPoint *placeObject = [[MapPoint alloc] initWithName:name coordinate:placeCoord];
+        [_mapView addAnnotation:placeObject];
+    }
+    
 }
 
 //another MapKit delegate method that will take your annotations as you add them using [mapView addAnnotation:placeObject], and draw them on the map.
@@ -159,14 +188,14 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+ {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

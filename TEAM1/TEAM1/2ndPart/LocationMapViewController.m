@@ -143,27 +143,37 @@
         MapPoint *placeObject = [[MapPoint alloc] initWithName:name coordinate:placeCoord];
         [_mapView addAnnotation:placeObject];
     }
-    // Hardcode plot nearby bus stops
-    for (int i=1; i<4; i++) {
-        //Retrieve the NSDictionary object in each index of the array.
-        //NSDictionary* place = [data objectAtIndex:i];
-        // 3 - There is a specific NSDictionary object that gives us the location info.
-        //NSDictionary *geo = [place objectForKey:@"geometry"];
-        // Get the lat and long for the location.
-        // NSDictionary *loc = [geo objectForKey:@"location"];
-        // 4 - Get your name and address info for adding to a pin.
-        NSString *name=@"name";//[place objectForKey:@"name"];
-        //NSString *vicinity=@"vicinity";//[place objectForKey:@"vicinity"];
-        // Create a special variable to hold this coordinate info.
-        CLLocationCoordinate2D placeCoord;
-        // Set the lat and long.
-        placeCoord.latitude= locationManager.location.coordinate.latitude + i*0.001;// * 0.00001;
-        placeCoord.longitude=locationManager.location.coordinate.longitude + i *0.001;//* 0.00002;
-        // 5 - Create a new annotation.
-        //MapPoint *placeObject = [[MapPoint alloc] initWithName:name address:vicinity coordinate:placeCoord];
-        MapPoint *placeObject = [[MapPoint alloc] initWithName:name coordinate:placeCoord];
-        [_mapView addAnnotation:placeObject];
-    }
+
+    NSString *name=@"Hamberg 28x 58 61A 61B 61C";
+    CLLocationCoordinate2D placeCoord;
+    placeCoord.latitude = 40.444679;// * 0.00001;
+    placeCoord.longitude = -79.945954;//* 0.00002;
+    MapPoint *placeObject = [[MapPoint alloc] initWithName:name coordinate:placeCoord];
+    [_mapView addAnnotation:placeObject];
+    
+    name=@"Dithridge 28x 54 58 61A 61B";
+    placeCoord.latitude = 40.444646;// * 0.00001;
+    placeCoord.longitude = -79.950116;//* 0.00002;
+    placeObject = [[MapPoint alloc] initWithName:name coordinate:placeCoord];
+    [_mapView addAnnotation:placeObject];
+
+    name=@"5th Ave 58 71B 71C";
+    placeCoord.latitude = 40.447928;// * 0.00001;
+    placeCoord.longitude = -79.942413;//* 0.00002;
+    placeObject = [[MapPoint alloc] initWithName:name coordinate:placeCoord];
+    [_mapView addAnnotation:placeObject];
+    
+    name=@"Beller 61A 61B 61C";
+    placeCoord.latitude = 40.444336;// * 0.00001;
+    placeCoord.longitude = -79.938572;//* 0.00002;
+    placeObject = [[MapPoint alloc] initWithName:name coordinate:placeCoord];
+    [_mapView addAnnotation:placeObject];
+    
+    name=@"Morewood 61A 61C 67 69";
+    placeCoord.latitude = 40.445087;// * 0.00001;
+    placeCoord.longitude = -79.942671;//* 0.00002;
+    placeObject = [[MapPoint alloc] initWithName:name coordinate:placeCoord];
+    [_mapView addAnnotation:placeObject];
     
 }
 

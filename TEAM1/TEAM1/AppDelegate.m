@@ -32,14 +32,20 @@
     [[UITabBar appearance] setBackgroundImage:tabBarBackground];
     [[UITabBar appearance] setSelectedImageTintColor:[UIColor colorWithRed:0.40 green:0.77 blue:0.93 alpha:1.0]];
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Privay Agreement" message:@"This app would like to use your current location. Personal Data collected for the following purposes and using the following services:Displaying content from external platforms Google Maps widget. Personal Data: Cookie and Usage Data" delegate:self cancelButtonTitle:@"I don't agree" otherButtonTitles:nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Privay Agreement" message:@"This app would like to use your current location. " delegate:self cancelButtonTitle:@"I don't agree" otherButtonTitles:nil];
     // optional - add more buttons:
     [alert addButtonWithTitle:@"I agree"];
     [alert show];
     
     return YES;
 }
-							
+
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+    if(buttonIndex == 0)
+        exit(0);
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

@@ -59,7 +59,7 @@
     cell.outBound.text = [time objectAtIndex:indexPath.row];
     cell.outBound.font = [UIFont fontWithName:@"HelveticaNeue-CondensedBlack" size:20.0];
     cell.outBoundDisplay.font = [UIFont fontWithName:@"HelveticaNeue-CondensedBlack" size:15.0];
-
+    
     
 
     return cell;

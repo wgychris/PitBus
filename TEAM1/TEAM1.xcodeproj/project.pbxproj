@@ -31,6 +31,7 @@
 		1E26A1701917411200C4915A /* NearByTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E26A16F1917411200C4915A /* NearByTableViewCell.m */; };
 		1E976044191826B00018A146 /* down2-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E976043191826B00018A146 /* down2-32.png */; };
 		1E976046191856750018A146 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E976045191856750018A146 /* MapKit.framework */; };
+		1EABE27B191C6E1000101C45 /* test2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1EABE27A191C6E1000101C45 /* test2.jpg */; };
 		1EB012E319186D4200AE6B1F /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB012E219186D4200AE6B1F /* SettingsViewController.m */; };
 		1EB012E61918796000AE6B1F /* DismissSeque.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB012E51918796000AE6B1F /* DismissSeque.m */; };
 		1EB012E9191882C300AE6B1F /* SelectItineraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB012E8191882C300AE6B1F /* SelectItineraryViewController.m */; };
@@ -39,6 +40,7 @@
 		1EC74ECC191C248C001CC343 /* running.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EC74ECA191C248C001CC343 /* running.png */; };
 		1EC74ECD191C248C001CC343 /* car.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EC74ECB191C248C001CC343 /* car.png */; };
 		1EC74ED0191C296B001CC343 /* DetailRouteListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EC74ECF191C296B001CC343 /* DetailRouteListViewController.m */; };
+		1EC74EE1191C6CF2001CC343 /* test1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1EC74EDF191C6CF2001CC343 /* test1.jpg */; };
 		C1310770191AFBFC00692555 /* DetailRoutePdfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1310765191AFBFC00692555 /* DetailRoutePdfViewController.m */; };
 		C1310771191AFBFC00692555 /* DetailRouteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1310767191AFBFC00692555 /* DetailRouteViewController.m */; };
 		C1310772191AFBFC00692555 /* ListRoutesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1310769191AFBFC00692555 /* ListRoutesTableViewController.m */; };
@@ -47,8 +49,6 @@
 		C1310775191AFBFC00692555 /* MapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = C131076F191AFBFC00692555 /* MapPoint.m */; };
 		C1B09BDD191B1C0000860396 /* DetailStepTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B09BDC191B1C0000860396 /* DetailStepTableViewCell.m */; };
 		C1B09BE0191B1C6000860396 /* DetailStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B09BDF191B1C6000860396 /* DetailStepViewController.m */; };
-		C1B09BEB191C6AD000860396 /* shot1.png in Resources */ = {isa = PBXBuildFile; fileRef = C1B09BE9191C6AD000860396 /* shot1.png */; };
-		C1B09BEC191C6AD000860396 /* shot2.png in Resources */ = {isa = PBXBuildFile; fileRef = C1B09BEA191C6AD000860396 /* shot2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +93,7 @@
 		1E26A16F1917411200C4915A /* NearByTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearByTableViewCell.m; sourceTree = "<group>"; };
 		1E976043191826B00018A146 /* down2-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down2-32.png"; sourceTree = "<group>"; };
 		1E976045191856750018A146 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1EABE27A191C6E1000101C45 /* test2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test2.jpg; sourceTree = "<group>"; };
 		1EB012E119186D4200AE6B1F /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		1EB012E219186D4200AE6B1F /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		1EB012E41918796000AE6B1F /* DismissSeque.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DismissSeque.h; sourceTree = "<group>"; };
@@ -107,6 +108,7 @@
 		1EC74ECB191C248C001CC343 /* car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car.png; sourceTree = SOURCE_ROOT; };
 		1EC74ECE191C296B001CC343 /* DetailRouteListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailRouteListViewController.h; path = ../DetailRouteListViewController.h; sourceTree = "<group>"; };
 		1EC74ECF191C296B001CC343 /* DetailRouteListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailRouteListViewController.m; path = ../DetailRouteListViewController.m; sourceTree = "<group>"; };
+		1EC74EDF191C6CF2001CC343 /* test1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test1.jpg; sourceTree = "<group>"; };
 		C1310764191AFBFC00692555 /* DetailRoutePdfViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailRoutePdfViewController.h; sourceTree = "<group>"; };
 		C1310765191AFBFC00692555 /* DetailRoutePdfViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailRoutePdfViewController.m; sourceTree = "<group>"; };
 		C1310766191AFBFC00692555 /* DetailRouteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailRouteViewController.h; sourceTree = "<group>"; };
@@ -123,8 +125,6 @@
 		C1B09BDC191B1C0000860396 /* DetailStepTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailStepTableViewCell.m; sourceTree = "<group>"; };
 		C1B09BDE191B1C6000860396 /* DetailStepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailStepViewController.h; sourceTree = "<group>"; };
 		C1B09BDF191B1C6000860396 /* DetailStepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailStepViewController.m; sourceTree = "<group>"; };
-		C1B09BE9191C6AD000860396 /* shot1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shot1.png; sourceTree = SOURCE_ROOT; };
-		C1B09BEA191C6AD000860396 /* shot2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shot2.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,14 +252,14 @@
 			isa = PBXGroup;
 			children = (
 				1EC74ECA191C248C001CC343 /* running.png */,
-				C1B09BE9191C6AD000860396 /* shot1.png */,
-				C1B09BEA191C6AD000860396 /* shot2.png */,
 				1EC74ECB191C248C001CC343 /* car.png */,
 				1E26A160191726B500C4915A /* bus.png */,
 				1E26A16819172A0F00C4915A /* wild_oliva.png */,
 				1E26A16919172A0F00C4915A /* wild_oliva_@2X.png */,
+				1EABE27A191C6E1000101C45 /* test2.jpg */,
 				1E26A16A19172A0F00C4915A /* wild_oliva_@tabBar.png */,
 				1E26A1661917299D00C4915A /* edit-32.png */,
+				1EC74EDF191C6CF2001CC343 /* test1.jpg */,
 				1E976043191826B00018A146 /* down2-32.png */,
 				1E26A1641917296000C4915A /* compas-32.png */,
 			);
@@ -363,16 +363,16 @@
 			files = (
 				1EC74ECD191C248C001CC343 /* car.png in Resources */,
 				1E26A16C19172A0F00C4915A /* wild_oliva_@2X.png in Resources */,
+				1EABE27B191C6E1000101C45 /* test2.jpg in Resources */,
 				1E26A1671917299D00C4915A /* edit-32.png in Resources */,
 				1E26A161191726B500C4915A /* bus.png in Resources */,
-				C1B09BEC191C6AD000860396 /* shot2.png in Resources */,
 				1EC74ECC191C248C001CC343 /* running.png in Resources */,
 				1E26A13F191722BB00C4915A /* Images.xcassets in Resources */,
 				1E26A16D19172A0F00C4915A /* wild_oliva_@tabBar.png in Resources */,
 				1E976044191826B00018A146 /* down2-32.png in Resources */,
-				C1B09BEB191C6AD000860396 /* shot1.png in Resources */,
 				1E26A12E191722BB00C4915A /* InfoPlist.strings in Resources */,
 				1E26A1651917296000C4915A /* compas-32.png in Resources */,
+				1EC74EE1191C6CF2001CC343 /* test1.jpg in Resources */,
 				1E26A137191722BB00C4915A /* Main.storyboard in Resources */,
 				1E26A16B19172A0F00C4915A /* wild_oliva.png in Resources */,
 			);

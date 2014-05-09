@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -848,8 +848,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="screenshot.png" translatesAutoresizingMaskIntoConstraints="NO" id="PZc-eV-3Fs">
-                                <rect key="frame" x="-5" y="64" width="332" height="455"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shot1.png" translatesAutoresizingMaskIntoConstraints="NO" id="PZc-eV-3Fs">
+                                <rect key="frame" x="-6" y="64" width="332" height="455"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
@@ -1008,7 +1008,7 @@
         <image name="down2-32.png" width="32" height="32"/>
         <image name="edit-32.png" width="32" height="32"/>
         <image name="running.png" width="128" height="128"/>
-        <image name="screenshot.png" width="892" height="1258"/>
+        <image name="shot1.png" width="892" height="1258"/>
         <image name="shot2.png" width="722" height="1020"/>
         <image name="wild_oliva.png" width="198" height="200"/>
     </resources>
